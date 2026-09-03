@@ -17,7 +17,7 @@ def distance(x1,x2,p):
 
 #function for getting material id
 def calculate_materials(values,priority):
-    df = pd.read_csv("Data/working_data.csv")
+    df = pd.read_csv("working_data.csv")
     X = df.drop("material_id",axis=1)
     scores = []
     for i in range(len(X)):
